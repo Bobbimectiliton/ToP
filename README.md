@@ -1,3 +1,5 @@
+INSTRUCTIONS PRIOR TO PLAYING:
+
 You need to download pygame from pip in powershell or your equivalent (also make sure you have everything up to date including python).
 
 To play the game run “One with Graphics”.
