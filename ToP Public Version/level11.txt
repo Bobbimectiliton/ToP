@@ -1,0 +1,18 @@
+level11 = [
+    "g                            g",
+    "g                            g",
+    "g                  rr  r     g",
+    "g                   r  r     g",
+    "g                   r  rr    g",
+    "g                       r    g",
+    "g                   r        g",
+    "g                    rr  r   g",
+    "gg                    rrrr   g",
+    "g gg                   rr    g",
+    "g  ggg                       g",
+    "g    gggg                    g",
+    "g       ggggg                g",
+    "g           gg               g",
+    "g            ggggggg         g",
+    "gggggggggggggggggggggg       g",
+]
