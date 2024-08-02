@@ -672,7 +672,7 @@ TEST = [
 
 levels = [BADLEVEL, BADDERLEVEL, level1001, level0, level111, level1,levelOne, 
           level2,level3,level4,level5,level6,level7,level8,level9, levelNine, level10,level11, 
-          levelFunkyAlya, levelangela1, levelangela2, levelVladdyDaddy]
+          levelFunkyAlya, levelangela1, level12,levelVladdyDaddy, levelangela2]
 current_level = 0
 
 
@@ -759,12 +759,16 @@ def main():
                    player.jumping = True
                elif event.key == pygame.K_s:
                     audio = not audio
+               elif event.key == pygame.K_r:
+                    player.respawn()
+                    if audio:
+                        mixer.music.play()
            elif event.type == pygame.KEYUP:
                if event.key == pygame.K_SPACE:
                    player.jumping = False
 
     
-       if not in_transition and player.move(blocks):
+       if player.move(blocks):
            transition_screen()
 
        screen.fill(WHITE)
@@ -781,6 +785,7 @@ def main():
        textBox('Number of Deaths: ' + str(deaths), 90,50)
        textBox('Time Passed: {:.2f}'.format(time), 130,50)
        textBox('Press S to stop Audio', 590,930)
+       textBox('Press R to KYS', 550,930)
 
        pygame.display.flip()
        clock.tick(60)
